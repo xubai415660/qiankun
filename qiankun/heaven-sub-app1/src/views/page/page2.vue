@@ -1,56 +1,39 @@
-<!--
- * @description:
- * @author: 王浩
- * @Date: 2022-09-01 11:49:56
- * @Modified By:
- * @version: 1.0.0
--->
 <template>
-  <div class="demo-page">
-    <h4>Demo page.</h4>
-    <img class="random-img" :src="randomImg" alt="" />
+  <div>
+    <el-button @click="emitEvent_login" type="primary">eventBus退出登录</el-button>
+    <el-button @click="go_item" type="primary" round>跳转</el-button>
+    <hr>
+    <el-button @click="closeCurrentTab" type="primary">关闭当前标签页</el-button>
   </div>
 </template>
-
 <script>
-import { testApi } from '@api/test-api';
-
 export default {
-    // eslint-disable-next-line vue/multi-word-component-names
     name: 'Page2',
-    data () {
-        return {
-            randomImg: ''
-        };
-    },
-    mounted () {
-        this.initData();
-    },
     methods: {
-        initData () {
-            const params = {greeting: 'Hi!'}
-            testApi(params).then((res) => {
-                console.log('res: ', res);
-                if (res.status === 200) {
-                    if (res.data && res.data.length) {
-                        this.randomImg = res.data[0].url;
+        go_item (){
+            // 判断是否为子应用
+            if (window.__POWERED_BY_QIANKUN__){
+                this.$router.push({
+                    path: '/micro-app/micro-app/page3',
+                    query: {
+                        from: 'App2ExampleA1'
                     }
-                }
-            })
-                .catch((err) => {
-                    console.log('err: ', err);
                 });
+
+            } else {
+                this.$router.push({
+                    path: '/micro-app/page3'
+                });
+            }
+        },
+        // 退出登录
+        emitEvent_login () {
+            this.$qiankunEventBus.$emit('logout');
+        },
+        // 关闭当前标签页
+        closeCurrentTab () {
+            this.$qiankunEventBus.$emit('removeCurrentTabs', {removeType: 3});
         }
     }
-};
-</script>
-
-<style lang="scss" scoped>
-.demo-page {
-  text-align: center;
-
-  .random-img {
-    max-width: 50vw;
-  }
 }
-</style>
+</script>

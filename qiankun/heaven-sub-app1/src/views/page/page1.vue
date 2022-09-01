@@ -8,8 +8,8 @@
 <template>
   <div>
     <el-button @click="setGlobalState" type="primary">修改globalstate</el-button>
-    <el-button @click="startGlobalStateListener" type="primary">开启globalstate监听</el-button>
-    <el-button @click="emitEventBus" type="primary">eventBus发布事件</el-button>
+    <el-button @click="setGlobal_Tabs" type="primary">关闭当前标签页</el-button>
+    <el-button @click="setGlobal_login" type="primary">退出登录</el-button>
   </div>
 </template>
 
@@ -26,21 +26,33 @@ export default {
                 eventCode: 'testEvent',
                 // 事件传递的参数
                 eventData: {
-                    time: new Date().getTime()
+                    time: new Date().getTime(),
+                    info: '王浩'
                 }
             })
         },
-        // 开启监听
-        startGlobalStateListener () {
-            this.$onGlobalStateChange((state) => {
-                console.log('子应用监听到globalState发生改变', state)
+        // 关闭当前标签页
+        setGlobal_Tabs (){
+            this.$setGlobalState({
+                // 事件触发来源
+                eventFrom: 'microApp',
+                // 事件的标识
+                eventCode: 'removeCurrentTabs',
+                // 事件传递的参数
+                eventData: {
+                    removeType: 1
+                }
             })
         },
-        // 发布事件
-        emitEventBus () {
-            this.$qiankunEventBus.$emit('testEvent', {
-                time: new Date().getTime(),
-                info: '王浩'
+        // 退出登录
+        setGlobal_login () {
+            this.$setGlobalState({
+                // 事件触发来源
+                eventFrom: 'microApp',
+                // 事件的标识
+                eventCode: 'logout',
+                // 事件传递的参数
+                eventData: ''
             })
         }
     }

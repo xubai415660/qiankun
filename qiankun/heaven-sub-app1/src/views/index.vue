@@ -15,7 +15,7 @@
     <el-container>
       <el-aside v-if="!isPoweredByQiankun" width="200px">
         <el-menu class="h100" router :default-active="$route.path">
-          <el-menu-item index="/page1">页面1</el-menu-item>
+          <el-menu-item v-for="(item,index) in routerList[0].children" :key="index" :index="`/micro-app/${item.path}`">{{ item.name }}</el-menu-item>
         </el-menu>
       </el-aside>
       <el-main class="index-page-main">
@@ -26,20 +26,17 @@
 </template>
 
 <script>
-// import { mapGetters } from 'vuex'
+import router from '@/router/routes.js';
 export default {
-    // eslint-disable-next-line
-  name: 'Index',
+    name: 'Index',
     computed: {
-    // ...mapGetters('common', {
-    //   userInfo: 'getUserInfo'
-    // }),
         isPoweredByQiankun () {
             return Boolean(window.__POWERED_BY_QIANKUN__)
         }
     },
     data () {
         return {
+            routerList: router,
             userInfo: {
                 name: '王浩'
             }

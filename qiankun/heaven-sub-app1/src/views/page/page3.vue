@@ -6,16 +6,21 @@
  * @version: 1.0.0
 -->
 <template>
-  <div class="echart-demo">
-    <echart-temp :options="options"></echart-temp>
+  <div>
+    <p>姓名： {{ userInfo.operName }}</p>
+    <p>单位：{{ userInfo.orgName }}</p>
+    <el-button @click="dispatchMainAppVuexFn" type="primary">调用vueX中定义的方法-关闭标签</el-button>
+    <el-button @click="dispatchMainAppFn" type="primary">退出登录</el-button>
+    <div class="echart-demo">
+      <echart-temp :options="options"></echart-temp>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import EchartTemp from '@/components/echarts/echart-temp.vue'
-
 export default {
-    // eslint-disable-next-line vue/multi-word-component-names
     name: 'Page3',
     components: {
         EchartTemp
@@ -25,10 +30,35 @@ export default {
             options: {}
         }
     },
+    computed: {
+        ...mapGetters('common', {
+            //  是否处于乾坤环境
+            isPoweredByQiankun: 'isPoweredByQiankun'
+        }),
+        // 如果处于 qiankun 环境中，那么访问 qiankunCommonStore 模块，否则访问 common 模块
+        userInfo () {
+            return this.isPoweredByQiankun
+                ? this.$store.getters['qiankunCommonStore/getUserInfo']
+                : this.$store.getters['common/getUserInfo'];
+        }
+    },
     mounted () {
         this.initData()
     },
     methods: {
+        dispatchMainAppVuexFn (){
+            // 如果处于 qiankun 环境中，那么访问 qiankunCommonStore 模块，否则访问 common 模块
+            if (this.isPoweredByQiankun){
+                this.$store.dispatch('qiankunCommonStore/removeCurrentTab', {removeType: 1})
+            } else {
+                this.$store.dispatch('common/removeCurrentTab', {removeType: 3})
+            }
+        },
+        // 退出登录
+        dispatchMainAppFn () {
+            this.$store.dispatch('qiankunCommonStore/logout')
+        },
+        // 初始化数据
         initData () {
             let xAxisData = [],
                 data1 = [],
