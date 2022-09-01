@@ -1,0 +1,43 @@
+{
+    "name": "heaven-main-app",
+    "version": "0.1.0",
+    "private": true,
+    "description": "基座应用",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "axios": "^0.27.1",
+        "core-js": "^3.8.3",
+        "echarts": "4.9.0",
+        "element-ui": "^2.15.6",
+        "mockjs": "^1.1.0",
+        "node-sass": "^4.14.1",
+        "qiankun": "^2.7.5",
+        "vue": "^2.6.14",
+        "vue-router": "3.5.3",
+        "vuex": "3.6.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.16",
+        "@babel/eslint-parser": "^7.12.16",
+        "@babel/preset-env": "^7.17.10",
+        "@vue/cli-plugin-babel": "~5.0.0",
+        "@vue/cli-plugin-eslint": "~5.0.0",
+        "@vue/cli-service": "~5.0.0",
+        "babel-plugin-component": "^1.1.1",
+        "eslint": "^7.32.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-vue": "^6.2.2",
+        "sass": "1.26.5",
+        "sass-loader": "8.0.2",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}

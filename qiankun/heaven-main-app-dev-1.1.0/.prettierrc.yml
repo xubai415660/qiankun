@@ -1,0 +1,32 @@
+# yaml格式，其它格式：https://prettier.io/docs/en/configuration.html
+# 在语句末尾打印分号
+semi: true
+# 用单引号代替双引号
+singleQuote: true
+# 引用对象中的属性时更改
+# "as-needed"- 仅在需要时在对象属性周围添加引号。
+# "consistent"- 如果对象中的至少一个属性需要引号，请引用所有属性。
+# "preserve"- 尊重对象属性中引号的输入使用。
+quoteProps: 'consistent'
+# >不单独在下一行
+jsxBracketSameLine: true
+# 缩进vue文件中脚本和样式
+vueIndentScriptAndStyle: false
+# 换行符
+endOfLine: auto
+# tab 1个默认4个空格
+tabWidth: 4
+# 使用空格作为缩进
+useTabs: false
+# 限制每行字符个数
+printWidth: 120
+# 尾逗号:none没有逗号
+trailingComma: none
+# 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+# trailingComma: 'es5'
+# 对象前后空格：默认true
+bracketSpacing: true
+# 始终给箭头函数的参数加括号
+arrowParens: 'always'
+# 指定HTML文件的全局空格敏感度
+htmlWhitespaceSensitivity: 'css'

@@ -1,0 +1,71 @@
+//定义单位-uniapp项目需要使用 rpx;@return $px * 1rpx;
+@function px($px) {
+    @return $px * 1px;
+}
+// 颜色
+$color-primary: #158e7d;
+$color-success: #09ad9c;
+$color-warning: #f8af39;
+$color-danger: #ff3333;
+$color-white: white;
+$color-black: black;
+$colors: (
+    primary: $color-primary,
+    success: $color-success,
+    warning: $color-warning,
+    danger: $color-danger,
+    white: $color-white,
+    black: $color-black
+);
+//字体大小
+$font-mini: px(12);
+$font-small: px(16);
+$font-base: px(14);
+$font-large: px(18);
+$fonts: (
+    mini: $font-mini,
+    small: $font-small,
+    base: $font-base,
+    large: $font-large
+);
+//border
+$border-width: px(1);
+$border-color: #e8e8e8;
+// border-radius
+$radius-base: px(4);
+$radius-circle: 50%;
+$radius: (
+    base: $radius-base,
+    circle: $radius-circle
+);
+//定位
+$positions: (
+    absolute: absolute,
+    relative: relative,
+    fixed: fixed
+);
+//文字对齐
+$textAligns: (
+    left: left,
+    center: center,
+    right: right
+);
+//浮动
+$floats: (
+    left: left,
+    right: right
+);
+//间距
+$size-zero: 0;
+$size-mini: px(10);
+$size-small: px(20);
+$size-base: px(24);
+$size-large: px(28);
+
+$sizes: (
+    zero: $size-zero,
+    mini: $size-mini,
+    small: $size-small,
+    base: $size-base,
+    large: $size-large
+);

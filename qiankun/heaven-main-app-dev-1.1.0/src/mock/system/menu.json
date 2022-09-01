@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "microAppId": "micro-app",
+            "microAppName": "微应用1",
+            "microAppEntry": "http://localhost:9083/child/micro-app/",
+            "microAppBaseRoute": "micro-app",
+            "menus": [
+                {
+                    "resourceName": "微应用1-菜单组A",
+                    "resourceUrl": "/micro-app",
+                    "resourceIcon": "el-icon-s-order",
+                    "resourceId": "/micro-app",
+                    "pResourceId": ""
+                },
+                {
+                    "resourceName": "initGlobalState通讯",
+                    "resourceUrl": "/micro-app/page1",
+                    "resourceIcon": "",
+                    "resourceId": "/micro-app/page1",
+                    "pResourceId": "/micro-app"
+                },
+                {
+                    "resourceName": "eventBus通讯",
+                    "resourceUrl": "/micro-app/page2",
+                    "resourceIcon": "",
+                    "resourceId": "/micro-app/page2",
+                    "pResourceId": "/micro-app"
+                },
+                {
+                    "resourceName": "vueX通讯",
+                    "resourceUrl": "/micro-app/page3",
+                    "resourceIcon": "",
+                    "resourceId": "/micro-app/page3",
+                    "pResourceId": "/micro-app"
+                }
+            ]
+        }
+    ],
+    "code": 200
+}
