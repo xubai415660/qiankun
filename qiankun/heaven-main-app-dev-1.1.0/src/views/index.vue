@@ -145,6 +145,7 @@ export default {
                         }
                     };
                 });
+                console.log('apps', apps);
                 registerApps(apps);
             });
         },

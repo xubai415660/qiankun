@@ -14,13 +14,13 @@ import common from './modules/common'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  getters: {},
-  modules: {
-    namespaced: true,
-    menu,
-    common
-  }
+    state: {},
+    mutations: {},
+    actions: {},
+    getters: {},
+    modules: {
+        namespaced: true,
+        menu,
+        common
+    }
 })

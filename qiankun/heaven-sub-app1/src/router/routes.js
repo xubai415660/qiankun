@@ -7,35 +7,33 @@
  */
 
 const routes = [
-  {
-    path: '/',
-    redirect: '/heaven-sub-app1'
-  },
-  {
-    path: '/index',
-    redirect: '/heaven-sub-app1'
-  },
-  {
-    path: '/heaven-sub-app1',
-    name: 'Index',
-    component: () => import('@/views/index.vue'),
-    children: [
-      {
-        path: 'example-a',
-        name: 'App1ExampleA'
-      },
-      {
-        path: 'example-a/1',
-        name: 'App1ExampleA1',
-        component: () => import('@/views/example-a/example-a-1.vue')
-      },
-      {
-        path: '404',
-        name: 'NotFound',
-        component: () => import('@/views/404.vue')
-      }
-    ]
-  }
+    {
+        path: '/micro-app',
+        name: 'Index',
+        component: () => import('@/views/index.vue'),
+        children: [
+            {
+                path: 'page1',
+                name: 'Page1',
+                component: () => import('@/views/page/page1.vue')
+            },
+            {
+                path: 'page2',
+                name: 'Page2',
+                component: () => import('@/views/page/page2.vue')
+            },
+            {
+                path: 'page3',
+                name: 'Page3',
+                component: () => import('@/views/page/page3.vue')
+            },
+            {
+                path: '404',
+                name: '404',
+                component: () => import('@/views/404/index.vue')
+            }
+        ]
+    }
 ];
 
 export default routes;

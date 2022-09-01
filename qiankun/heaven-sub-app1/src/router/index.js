@@ -12,8 +12,8 @@ import routes from './routes';
 Vue.use(Router);
 
 const router = new Router({
-  mode: 'history',
-  routes
+    mode: 'hash',
+    routes
 });
 
 export default router;

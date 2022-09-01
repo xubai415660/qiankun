@@ -26,18 +26,25 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
 export default {
-  // eslint-disable-next-line
+    // eslint-disable-next-line
   name: 'Index',
-  computed: {
-    ...mapGetters('common', {
-      userInfo: 'getUserInfo'
-    }),
-    isPoweredByQiankun () {
-      return Boolean(window.__POWERED_BY_QIANKUN__)
+    computed: {
+    // ...mapGetters('common', {
+    //   userInfo: 'getUserInfo'
+    // }),
+        isPoweredByQiankun () {
+            return Boolean(window.__POWERED_BY_QIANKUN__)
+        }
+    },
+    data () {
+        return {
+            userInfo: {
+                name: '王浩'
+            }
+        }
     }
-  }
 }
 </script>
 

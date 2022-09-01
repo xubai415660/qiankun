@@ -7,15 +7,15 @@
  */
 // 防抖函数
 export function debounce (func, delay) {
-  // 维护一个 timer
-  let timer = null;
-  return function () {
-    clearTimeout(timer);
-    // eslint-disable-next-line consistent-this
-    const context = this,
-      args = arguments;
-    timer = setTimeout(function () {
-      func.apply(context, args);
-    }, delay);
-  };
+    // 维护一个 timer
+    let timer = null;
+    return function () {
+        clearTimeout(timer);
+        // eslint-disable-next-line consistent-this
+        const context = this,
+            args = arguments;
+        timer = setTimeout(function () {
+            func.apply(context, args);
+        }, delay);
+    };
 }

@@ -8,6 +8,6 @@
 
 // 判断是否是生产环境
 if (window.__POWERED_BY_QIANKUN__) {
-  // eslint-disable-next-line
+    // eslint-disable-next-line
   __webpack_public_path__ = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__
 }

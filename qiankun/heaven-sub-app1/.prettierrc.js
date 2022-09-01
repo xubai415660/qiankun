@@ -8,5 +8,5 @@ module.exports = {
     bracketSpacing: true, //在对象文字中的括号之间打印空格
     arrowParens: 'always', //始终给箭头函数的参数加括号
     htmlWhitespaceSensitivity: 'css', //指定HTML文件的全局空格敏感度
-    endOfLine: 'auto', //检测换行符类型，如果出现大量换行符报错，可以修改为auto不检测
+    endOfLine: 'auto' //检测换行符类型，如果出现大量换行符报错，可以修改为auto不检测
 }

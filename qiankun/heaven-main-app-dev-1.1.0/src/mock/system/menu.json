@@ -33,6 +33,13 @@
                     "resourceIcon": "",
                     "resourceId": "/micro-app/page3",
                     "pResourceId": "/micro-app"
+                },
+                {
+                    "resourceName": "404页面",
+                    "resourceUrl": "/micro-app/404",
+                    "resourceIcon": "",
+                    "resourceId": "/micro-app/404",
+                    "pResourceId": "/micro-app"
                 }
             ]
         }
