@@ -1,0 +1,396 @@
+{
+  "APPLY_SCOPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "全部",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "总部侧",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    }
+  ],
+  "DB_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "ORACLE",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "MYSQL",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "HIVE",
+      "codeClsVal": "03",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 4,
+      "hasChildren": "0",
+      "codeClsValName": "HBASE",
+      "codeClsVal": "04",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 5,
+      "hasChildren": "0",
+      "codeClsValName": "KUDU",
+      "codeClsVal": "05",
+      "prntCodeClsVal": null
+    }
+  ],
+  "CHECK_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "是",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "否",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    }
+  ],
+  "STORAGE_TIME_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "日",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "月",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "年",
+      "codeClsVal": "03",
+      "prntCodeClsVal": null
+    }
+  ],
+  "VER_STATE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "未发布审核",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "审核通过",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "审核未通过",
+      "codeClsVal": "03",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 4,
+      "hasChildren": "0",
+      "codeClsValName": "已下发",
+      "codeClsVal": "04",
+      "prntCodeClsVal": null
+    }
+  ],
+  "INDEX_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "单列索引",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "多列索引",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    }
+  ],
+  "PK": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "否",
+      "codeClsVal": "0",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "是",
+      "codeClsVal": "1",
+      "prntCodeClsVal": null
+    }
+  ],
+  "FK": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "否",
+      "codeClsVal": "0",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "是",
+      "codeClsVal": "1",
+      "prntCodeClsVal": null
+    }
+  ],
+  "NO_NULL": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "否",
+      "codeClsVal": "0",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "是",
+      "codeClsVal": "1",
+      "prntCodeClsVal": null
+    }
+  ],
+  "INDEX_ORDER_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "ASC",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "DESC",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    }
+  ],
+  "DATA_TYPE_PRO": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "NUBER",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "VARCHAR2",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "DATE",
+      "codeClsVal": "03",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 4,
+      "hasChildren": "0",
+      "codeClsValName": "BLOB",
+      "codeClsVal": "04",
+      "prntCodeClsVal": null
+    }
+  ],
+  "UPDATE_WAY": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "导入",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "手动变更",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    }
+  ],
+  "RELA_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "一对一",
+      "codeClsVal": "1",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "一对多",
+      "codeClsVal": "2",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "多对多",
+      "codeClsVal": "3",
+      "prntCodeClsVal": null
+    }
+  ],
+  "CHANGED_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "新增",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "修改",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "删除",
+      "codeClsVal": "03",
+      "prntCodeClsVal": null
+    }
+  ],
+  "CHANGED_OPT_TYPE": [
+    {
+      "serialNumber": 1,
+      "hasChildren": "0",
+      "codeClsValName": "字段名称",
+      "codeClsVal": "01",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 2,
+      "hasChildren": "0",
+      "codeClsValName": "字段编码",
+      "codeClsVal": "02",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 3,
+      "hasChildren": "0",
+      "codeClsValName": "数据类型",
+      "codeClsVal": "03",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 4,
+      "hasChildren": "0",
+      "codeClsValName": "主键",
+      "codeClsVal": "04",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 5,
+      "hasChildren": "0",
+      "codeClsValName": "外键",
+      "codeClsVal": "05",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 6,
+      "hasChildren": "0",
+      "codeClsValName": "非空",
+      "codeClsVal": "06",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 7,
+      "hasChildren": "0",
+      "codeClsValName": "自增",
+      "codeClsVal": "07",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 8,
+      "hasChildren": "0",
+      "codeClsValName": "默认值",
+      "codeClsVal": "08",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 9,
+      "hasChildren": "0",
+      "codeClsValName": "实体关系",
+      "codeClsVal": "09",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 10,
+      "hasChildren": "0",
+      "codeClsValName": "索引名称",
+      "codeClsVal": "10",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 11,
+      "hasChildren": "0",
+      "codeClsValName": "字段备注",
+      "codeClsVal": "11",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 12,
+      "hasChildren": "0",
+      "codeClsValName": "索引类型",
+      "codeClsVal": "12",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 13,
+      "hasChildren": "0",
+      "codeClsValName": "内容",
+      "codeClsVal": "13",
+      "prntCodeClsVal": null
+    },
+    {
+      "serialNumber": 14,
+      "hasChildren": "0",
+      "codeClsValName": "关联实体字段",
+      "codeClsVal": "14",
+      "prntCodeClsVal": null
+    }
+  ]
+}
