@@ -1,10 +1,3 @@
-/********************************************************
- * @description：
- * @author：
- * @date：Created in 2022/3/23 10:19
- * @modified By：
- * @version: 1.0.0
- *******************************************************/
 import "./public-path";
 import Vue from "vue";
 import App from "./App.vue";
@@ -32,17 +25,10 @@ console.log("版本信息:", process.env.version);
 
 Vue.prototype.$validator = validator;
 
-// todo 前端调试下载excel的时候需要取消mock
-// if (process.env.NODE_ENV !== "production") {
-//   require("@/mock");
-// }
-
 let instance = null;
 
 function render(props = {}) {
   const { container, componentName, componentPath } = props;
-  // let globalConfig = props.getGlobalState ? props.getGlobalState("globalConfig") : undefined;
-  // Vue.use(SgUI, { size: globalConfig?.formSize || "medium" });
   if (!componentName) {
     instance = new Vue({
       router,
@@ -68,18 +54,11 @@ if (!window.__POWERED_BY_QIANKUN__) {
   render();
 }
 
-export async function bootstrap() {
-  // console.log("[vue] vue app bootstraped", props);
-  // common.setCommonData(props);
-}
+export async function bootstrap() {}
 
 export async function mount(props) {
   console.log("[vue] props from main framework", props);
   common.initGlobalState(store, props);
-  // props.onGlobalStateChange((state, prev) => {
-  //   // state: 变更后的状态; prev 变更前的状态
-  //   console.log("change", state, prev);
-  // });
   render(props);
 }
 

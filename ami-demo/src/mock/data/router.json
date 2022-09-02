@@ -10,5 +10,17 @@
     "webUrl": "",
     "hidden": false,
     "hasChildren": false
+  },
+  {
+    "menuName": "地图api",
+    "menuNo": "8",
+    "pMenuNo": "1",
+    "path": "/leaflet",
+    "component": "/leaflet/index.vue",
+    "resourceCode": "AMI-MA0100999-01",
+    "icon": "home",
+    "webUrl": "",
+    "hidden": false,
+    "hasChildren": false
   }
 ]

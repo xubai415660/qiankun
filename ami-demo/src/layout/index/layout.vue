@@ -7,7 +7,7 @@
  ---------------------------------------------------------------------------->
 <template>
   <div style="width: 100%; height: 100%; position: relative">
-    <div style="width: 100%; height: 126px; background: linear-gradient(180deg, #0069c4, #0055ae)" v-if="!isQiankun">
+    <div style="width: 100%; height: 60px; background: linear-gradient(180deg, #0069c4, #0055ae)" v-if="!isQiankun">
       <ami-tooltip
         class="item"
         effect="dark"
@@ -25,7 +25,7 @@
     <div
       :style="{
         width: '100%',
-        height: isQiankun ? '100%' : 'calc(100% - 144px)',
+        height: isQiankun ? '100%' : 'calc(100% - 80px)',
       }"
     >
       <keep-alive :exclude="uncacheList" :include="cacheList">
