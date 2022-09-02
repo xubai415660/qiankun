@@ -15,17 +15,17 @@ const routes = [
             {
                 path: 'page1',
                 name: 'Page1',
-                component: () => import('@/views/page/page1.vue')
+                component: () => import('@/views/micro-app/page1.vue')
             },
             {
                 path: 'page2',
                 name: 'Page2',
-                component: () => import('@/views/page/page2.vue')
+                component: () => import('@/views/micro-app/page2.vue')
             },
             {
                 path: 'page3',
                 name: 'Page3',
-                component: () => import('@/views/page/page3.vue')
+                component: () => import('@/views/micro-app/page3.vue')
             },
             {
                 path: '404',
