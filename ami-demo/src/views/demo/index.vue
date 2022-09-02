@@ -187,7 +187,7 @@ export default {
         });
       }
     },
-// 选中每个省，先判断是否已选中，已选择就删除。没选中就添加
+    // 选中每个省，先判断是否已选中，已选择就删除。没选中就添加
     buttonClick(item) {
       let index = this.buttonType.indexOf(item.no);
       if (index > -1) {
